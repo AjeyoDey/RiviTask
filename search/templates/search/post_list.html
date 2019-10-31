@@ -1,6 +1,16 @@
 <html>
 <body>
     <p>Hi there!</p>
-    <p>It works!</p>
+    <p>
+    	{% for post in posts %}
+    		<p>Source is {{post.src}}</p>
+    		<p>Destination is {{post.des}}</p>
+    		<p>DOJ is {{post.doj}}</p>
+    		<p>The Hash Value is {{post.hashTravel}}</p>
+    		<p>Sample Data is {{post.sampleData}}</p>
+    		<p>--------------------</p>
+		{% endfor %}
+	</p>
+    <p>{{posts}}</p>
 </body>
 </html>
